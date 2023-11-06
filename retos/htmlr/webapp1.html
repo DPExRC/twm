@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas</title>
+    <style>
+        .contenedor {
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px;
+            max-width: 250px; 
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="contenedor">
+        <form id="formDatos1">
+            <label for="Longitud">Longitud de la contraseña:</label><br><br>
+            <input type="number" id="Longitud" min="8" max="20" value="8">
+            <br>
+
+            <label for="mayúsculas">Incluir letras mayúsculas:</label><br><br>
+            <input type="checkbox" id="mayúsculas">
+            <br>
+
+            <label for="minúsculas">Incluir letras minúsculas:</label><br><br>
+            <input type="checkbox" id="minúsculas">
+            <br>
+
+            <label for="números">Incluir números:</label><br><br>
+            <input type="checkbox" id="números">
+            <br>
+
+            <label for="caracteres">Incluir caracteres especiales:</label><br><br>
+            <input type="checkbox" id="caracteres">
+            <br><br>
+
+            <input type="submit" value="Generar contraseña">
+        </form>
+        <div id="resultados"></div>
+    </div>
+
+    <script src="../jsr/webapp1.js"></script>
+
+</body>
+</html>
